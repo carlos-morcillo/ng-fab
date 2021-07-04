@@ -1,0 +1,8 @@
+<a role="button" [style.backgroundColor]="bgColor" [style.color]="color" (click)="isOpen = !isOpen">
+	<i class="icon" [ngClass]="icon"></i>
+	<i class="icon fa fa-times"></i>
+	<div *ngIf="label" class="fab-label">{{ label }}</div>
+</a>
+<div class="fab-buttons" [ngClass]="'fab-buttons-' + direction">
+	<ng-content></ng-content>
+</div>
